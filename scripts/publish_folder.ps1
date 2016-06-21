@@ -20,3 +20,6 @@ if(!(Test-Path ./settings/config.ps1)) {
 & 7z.exe a ./$archive_name.tar.gz ./$archive_name.tar
 
 & ./publish_to_bitbucket.ps1 ./$archive_name.tar.gz
+
+Remove-Item ./$archive_name.tar
+Remove-Item ./$archive_name.tar.gz

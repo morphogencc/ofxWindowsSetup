@@ -18,8 +18,8 @@ if(!(Test-Path ./settings/config.ps1)) {
 
 $dir_name = "$((Get-Date).ToString('yyyy-MM-dd'))"
 
-& 7z.exe e ./$dir_name.tar.gz 
-& 7z.exe x -aoa -ttar ./$dir_name.tar
+& ./7za.exe e ./$dir_name.tar.gz 
+& ./7za.exe x -aoa -ttar ./$dir_name.tar
 
 Remove-Item ./$dir_name.tar
 Remove-Item ./$dir_name.tar.gz

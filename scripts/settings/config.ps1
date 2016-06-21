@@ -1,16 +1,16 @@
 # Name of Executable, used for archiving
-$CONFIG_exe_path = "../bin"
-$CONFIG_release_path = "../"
-$CONFIG_exe_name = "project.exe"
+$CONFIG_exe_path = "../exe"
+$CONFIG_release_path = "../../software/Release"
+$CONFIG_exe_name = "nobel_chamber.exe"
 
 # Bitbucket config
-$SECRET_username = "bitbucket_user"
-$CONFIG_team_name = "team_name"
-$CONFIG_project_name = "project_name"
+$SECRET_username = "nathanSDF"
+$CONFIG_team_name = "smalldesignfirm"
+$CONFIG_project_name = "nobel_chamber"
 
 # Local Settings
 $CONFIG_computer_name = hostname
-$CONFIG_admin_username = "admin"
+$CONFIG_admin_username = "sdf"
 $CONFIG_admin_password = "changeme"
 
 # Ethernet Settings
@@ -23,7 +23,7 @@ $CONFIG_network_dns="8.8.8.8"
 $CONFIG_network_dns_alt="8.8.4.4"
 
 # Path to wallpaper image
-$CONFIG_wallpaper_path = "../bin/data/images/startup/startup.jpg"
+$CONFIG_wallpaper_path = "../runtime/data/images/startup/startup.jpg"
 
 # Time-related Parameters
 $CONFIG_timezone = "Eastern Standard Time"

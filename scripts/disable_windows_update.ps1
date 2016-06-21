@@ -10,13 +10,13 @@ if ([environment]::OSVersion.Version.Major -lt 10) {
 }
 
 if ([environment]::OSVersion.Version.Major -eq 10) {
-	if(!(Test-Path 'HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate')) {
-		New-Item -Path 'HKLM\Software\Policies\Microsoft\Windows\' -Name 'WindowsUpdate'
+	if(!(Test-Path 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate')) {
+		New-Item -Path 'HKLM:\Software\Policies\Microsoft\Windows\' -Name 'WindowsUpdate'
 	}
 
-	if(!(Test-Path 'HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU')) {
-		New-Item -Path 'HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate' -Name 'AU'
+	if(!(Test-Path 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU')) {
+		New-Item -Path 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate' -Name 'AU'
 	}
 	
-	Set-ItemProperty -Path 'HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU' -Name "NoAutoUpdate" -Value 1
+	Set-ItemProperty -Path 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU' -Name "NoAutoUpdate" -Value 1
 }
