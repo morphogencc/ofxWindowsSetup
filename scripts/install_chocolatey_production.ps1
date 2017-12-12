@@ -14,7 +14,6 @@ choco install atom
 
 # for cloning repos
 choco install git
-choco install sourcetree
 
 # for running C++ executables
 choco install vcredist2017

@@ -14,7 +14,6 @@ choco install atom
 
 # useful for production
 choco install git
-choco install sourcetree
 choco install visualstudio2017community
 choco install meteor
 choco install python --version 3.5.4
