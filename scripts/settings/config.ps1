@@ -1,13 +1,3 @@
-# Name of Executable, used for archiving
-$CONFIG_exe_path = "../exe"
-$CONFIG_release_path = "../../software/Release"
-$CONFIG_exe_name = "nobel_chamber.exe"
-
-# Bitbucket config
-$SECRET_username = "nathanSDF"
-$CONFIG_team_name = "smalldesignfirm"
-$CONFIG_project_name = "nobel_chamber"
-
 # Local Settings
 $CONFIG_computer_name = hostname
 $CONFIG_admin_username = "sdf"

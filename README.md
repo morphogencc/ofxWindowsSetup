@@ -3,6 +3,13 @@
 ## Requirements
 * Windows 8 or newer (doesn't work in Windows 7 :( )
 
+### Usage
+Create the desired settings in `scripts/settings/config.ps1`.
+
+Run either `./setup_development.ps1` for a develpoment computer (lots of software useful for writing, compiling, and testing code) or `./setup_production.ps1` for a production computer (much more minimal).
+
+## OLD README (not useful anymore)
+
 ### Computer Configuration
 In the `scripts` folder, there are a variety of scripts that can be used to change your computer settings.  Ones I recommend using:
 
