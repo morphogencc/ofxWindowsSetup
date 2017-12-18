@@ -12,15 +12,13 @@ choco install quicktime
 # text editors
 choco install atom
 
-# useful for production
+# developer tools
 choco install git
 choco install visualstudio2017community
-choco install meteor
 choco install python --version 3.5.4
 choco install pip
-
-# useful for development
 choco install nodejs
+choco install meteor
 choco install arduino
 choco install cmake
 choco install kicad
@@ -32,5 +30,6 @@ choco install 7zip
 choco install filezilla
 choco install teamviewer
 choco install wireshark
+choco install dropbox
 
 refreshenv
