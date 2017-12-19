@@ -16,7 +16,7 @@ choco install atom
 choco install git
 choco install visualstudio2017community
 choco install python --version 3.5.4
-choco install pip
+python -m ensurepip
 choco install nodejs
 choco install meteor
 choco install arduino

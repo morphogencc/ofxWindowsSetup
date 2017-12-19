@@ -20,7 +20,7 @@ choco install vcredist2017
 
 # for running python scripts / downloading requirements
 choco install python --version 3.5.4
-choco install pip
+python -m ensurepip
 
 # for running node programs
 choco install nodejs
