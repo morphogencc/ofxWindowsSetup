@@ -1,4 +1,4 @@
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+ocoSet-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 chocolatey feature enable -n allowGlobalConfirmation
 
@@ -34,5 +34,7 @@ choco install filezilla
 choco install teamviewer
 choco install wireshark
 choco install dropbox
+choco install slack
+choco install googledrive
 
 refreshenv
