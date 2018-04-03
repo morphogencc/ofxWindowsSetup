@@ -1,0 +1,8 @@
+- name: Disable Domain Firewall
+  hosts: all
+  tasks:
+  - name: disable firewall
+    win_firewall:
+      state: disabled
+      profiles:
+      - Domain

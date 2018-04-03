@@ -1,0 +1,7 @@
+- name: test raw module
+  hosts: all
+  tasks:
+    - name: downloading a file
+      win_get_url: dest="d:\cv.pdf" url="http://oriolrius.cat/CV/"
+      register: out
+- debug: var=out

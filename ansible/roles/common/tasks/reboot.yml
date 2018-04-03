@@ -1,0 +1,7 @@
+---
+# This playbook uses the win_ping module to test connectivity to Windows hosts
+- name: Reboot
+  hosts: all
+  tasks:
+  - name: reboot
+    win_reboot:

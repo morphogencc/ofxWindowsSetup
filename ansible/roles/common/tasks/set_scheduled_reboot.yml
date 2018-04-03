@@ -1,0 +1,15 @@
+- name: Set Schedule Reboot
+  hosts: all
+  tasks:
+  - name: create scheduled reboot task
+    win_scheduled_task:
+      name: TaskName
+      description: open command prompt
+      executable: cmd
+      arguments: -opt1 -opt2
+      path: \example
+      time: 9am
+      frequency: daily
+      state: present
+      enabled: yes
+      user: SYSTEM

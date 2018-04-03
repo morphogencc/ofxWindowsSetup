@@ -1,0 +1,6 @@
+- name: Set Power Plan
+  hosts: all
+  tasks:
+  - name: change power plan
+    win_power_plan:
+      name: high performance

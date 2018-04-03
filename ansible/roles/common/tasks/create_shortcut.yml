@@ -1,0 +1,7 @@
+- name: Create an application shortcut for the Ansible website
+  win_shortcut:
+    src: '%ProgramFiles%\Google\Chrome\Application\chrome.exe'
+    dest: '%UserProfile%\Desktop\Ansible website.lnk'
+    args: --new-window https://ansible.com/
+    directory: '%ProgramFiles%\Google\Chrome\Application'
+    icon: '%ProgramFiles%\Google\Chrome\Application\chrome.exe,0'

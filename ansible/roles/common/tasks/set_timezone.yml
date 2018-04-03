@@ -1,0 +1,6 @@
+- name: Set Timezone
+  hosts: all
+  tasks:
+  - name: set timezone
+    win_timezone:
+      timezone: Eastern Standard Time

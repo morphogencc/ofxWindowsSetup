@@ -1,0 +1,15 @@
+- name:  Windows Update
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Running Windows Update
+      win_updates:
+        category_names: ['SecurityUpdates','CriticalUpdates','UpdateRollups', 'Updates', 'DefinitionUpdates']
+      register: result
+
+    # output results
+    - debug: var=result
+
+    # reboot only if required
+    - win_reboot:
+      when: result.reboot_required
